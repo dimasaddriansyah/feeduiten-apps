@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(223deg, #3c3dbf 0%, #2998ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #454545;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  color: #454545;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+h4 {
+  color: #3c3dbf;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+h6 {
+  color: #454545;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+hr {
+  stroke-width: 1px;
+  stroke: #ebebff;
+}
+
+.title {
+  color: #a1a1a1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle {
+  color: #a1a1a1;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-wrapper {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #f4f4f4;
+  background: #fff;
+  box-shadow: 0px 6px 30px 0px rgba(206, 206, 206, 0.25);
+}
+
+.icon-wrapper-income {
   display: flex;
+  width: 35px;
+  height: 35px;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 6px;
+  background: #e4e5ff;
+  color: #3c3dbf;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-wrapper-expense {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #FFECF0;
+  color: #ff3666;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-purple {
+  color: #3c3dbf;
+  font-weight: 600;
+}
+
+.text-pink {
+  color: #ff3666;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn-purple {
+  background: #3c3dbf;
+}
+
+.btn-pink {
+  background: #ff3666;
+}
+
+.btn:hover.btn-purple {
+  background: #3c3cbe4d;
+  color: #3c3dbf;
+}
+
+.btn:hover.btn-pink {
+  background: #ff38674d;
+  color: #ff3666;
 }
